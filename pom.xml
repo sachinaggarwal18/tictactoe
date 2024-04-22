@@ -1,0 +1,16 @@
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependencies>
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.1</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.19.1</version>
+</dependency>
+</dependencies>
+

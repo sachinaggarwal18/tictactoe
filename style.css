@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(32, 13, 65);
+    color: white;
+    height: 70px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+padding: 15px;
+}
+
+.gameContainer{
+    display: flex;
+    background-color: #14bdac;
+    justify-content: center;
+    margin-top: 2px;
+    height: 40rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    margin-top: 40px;
+    position: relative;
+}
+    
+.box{
+    border: 2px solid black;
+    font-size:8vw;
+    cursor: pointer;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(26, 218, 228);
+}
+
+.boxtext{
+    padding: 10px;
+    margin-left: 10px;
+    color: rgb(207, 216, 195);
+
+
+}
+
+.boxtext:hover{
+color: white;
+}
+
+.gameinfo{
+    padding: 40px;
+    /* display: flex; */
+}
+
+.gameinfo h1{
+    font-size: 2.5rem;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.info{
+    padding: 22px;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+#reset{
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid black;
+    font-size: 14px;
+    background-color: orange;
+    color: rgb(64, 64, 212);
+    margin: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#reset:hover{
+    border: 2px solid rgb(178, 52, 52);
+    /* background-color: rgb(0, 94, 255);
+    color: white; */
+    color: orange;
+    background-color: rgb(64, 64, 212);
+
+}
+
+.line{
+    background-color: black;
+    width: 20vw;
+    height: 3px;
+    position: absolute;
+}
+
+
+@media screen and (max-width:950px) {
+
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+
+    .gameinfo{
+        margin-top: 35px;
+    }
+    
+    .gameinfo h1{
+        font-size: 1.2rem;
+    }
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,20vw);
+    grid-template-columns: repeat(3,20vw);
+}
+
+
+}
